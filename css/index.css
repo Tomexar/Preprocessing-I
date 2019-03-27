@@ -134,6 +134,117 @@ html,
 body {
   height: 100%;
 }
-html {
-  background: blue;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+.profile {
+  background: #e9ecef;
+  border-radius: 2px;
+}
+img {
+  height: 200px;
+  width: 200px;
+  margin: 40px 0 10px 20px;
+}
+.top-profile h1 {
+  font-size: 40px;
+  margin-left: 20px;
+}
+.top-profile p {
+  font-size: 17px;
+  margin: 15px 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+.bot-profile {
+  margin-left: 20px;
+  padding-bottom: 50px;
+}
+.bot-profile p {
+  font-size: 13px;
+}
+button {
+  margin: 20px 0 0 0;
+  border: 1px solid darkgrey;
+  background: darkgray;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.listen {
+  width: 50%;
+}
+.stuff {
+  padding: 20px;
+  width: 50%;
+}
+.good {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e9ecef;
+  width: 250px;
+}
+.disc-golf {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.coding {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.games {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.bootstrap {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.naps {
+  padding: 10px;
+}
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+  width: 600px;
+}
+table,
+th,
+td {
+  vertical-align: middle;
+  border-color: inherit;
+  border-bottom: 1px solid black;
+  border: colapse;
+  height: 50px;
+  text-align: left;
+  padding-left: 20px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+footer {
+  background: darkgrey;
+  text-align: center;
+  padding: 25px 0px;
+  margin: 20px 0;
+  font-size: 12px;
+  color: white;
 }
