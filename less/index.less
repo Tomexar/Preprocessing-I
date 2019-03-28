@@ -57,6 +57,37 @@ html, body {
     height: 100%;
 }
 
+
+// mixins 
+.ml20(){
+	margin-left: 20px;
+}
+
+
+
+//media 
+
+
+
+
+// @media( max-width:500px)
+
+
+
+
+
+//variables 
+h1{
+	font-family: 'Lato', sans-serif;
+}
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+b{
+	font-weight: bold;
+}
+
 .container{
 	max-width: 600px;
 	margin: 0 auto;
@@ -66,138 +97,173 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	margin: 20px 0;
-}
+	
+	@media(max-width: 500px){
+		justify-content: center;
+		background: red;
+	}
 
-header a{
-	text-decoration: none;
-	color: black;
-	padding:15px;
-}
+	a{
+		text-decoration: none;
+		color: black;
+		padding:15px;
+	}
+}//header 
+
+
 
 .profile{
 	background: #e9ecef;
 	border-radius: 2px;
-}
-img {
-	height: 200px;
-	width: 200px;
-	margin: 40px 0 10px 20px;
-}
-.top-profile h1{
-	font-size: 40px;
-	margin-left: 20px;	
-}
-.top-profile p{
-	font-size: 17px;
-	margin: 15px 20px;
-	padding-bottom: 15px;
-	border-bottom: 1px solid grey;
-}
 
-.bot-profile{
-	margin-left: 20px;
-	padding-bottom: 50px;
-}
+	img {
+		height: 200px;
+		width: 200px;
+		margin: 40px 0 10px 20px;
+		}
+	.top-profile h1{
+		font-size: 40px;
+		margin-left: 20px;	
+		}
 
-.bot-profile p{
-	font-size: 13px;
-}
+	.top-profile p{
+		font-size: 17px;
+		margin: 15px 20px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid grey;
+		}
 
-button{
-	margin: 20px 0 0 0;
-	border:1px solid darkgrey;
-	background: darkgray;
-	color: white;
-	padding :7px 10px;
-	border-radius: 6px;
-	font-size: 15px;
-	cursor: pointer;
-}
+	.bot-profile{
+		margin-left: 20px;
+		padding-bottom: 50px;
+	}
+		
+	.bot-profile p{
+			font-size: 13px;
+	}
+		
+	button{
+		margin: 20px 0 0 0;
+		border:1px solid darkgrey;
+		background: darkgray;
+		color: white;
+		padding :7px 10px;
+		border-radius: 6px;
+		font-size: 15px;
+		cursor: pointer;
+		}
+	@media (max-width: 500px) {
+		// background: blue;
+		text-align: center;
+		
+	}
+}//profile	
 
 .middle{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 0;
+	
+	.listen{
+		width:50%;
+		h1{
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+		 p{
+			font-size: 12px;
+			padding-right: 20px;
+			line-height: 150%
+		}
+	}
+	.stuff{
+		width:50%;
+
+		h1{
+		font-size: 25px;
+		margin-bottom: 10px;
+		}
+	
+		.good{
+			display:flex;
+			flex-direction: column;
+			border:1px solid #e9ecef;
+			width:18.75rem;
+			font-size: 12px;
+			.disc-golf {
+				border-bottom:1px solid  #e9ecef;
+				padding: 10px;
+			}
+			
+			.coding{
+				border-bottom:1px solid  #e9ecef;
+				padding: 10px;
+			}
+			
+			.games{
+				border-bottom:1px solid  #e9ecef;
+				padding: 10px;
+			}
+			
+			.bootstrap{
+				border-bottom:1px solid  #e9ecef;
+				padding: 10px;
+			}
+			
+			.naps{
+				padding: 10px;
+			}
+		}
+	}	
+	@media(max-width: 500px){
+		flex-direction: column;
+		align-content: center;
+		.stuff{ margin-top: 15px;
+			.good{
+				width:11rem;
+			}
+		}	
+
+	}
 }
 
-.listen{
-	width:50%;
 
-}
+.history{
 
-.listen h1{
-	font-size: 25px;
-	margin-bottom: 10px;
-}
 
-.listen p{
-	font-size: 15px;
-	padding-right: 20px;
-}
+	.history h1{
+		font-size: 20px;
+	}
 
-.stuff{
-	width:50%;
-}
-
-.stuff h1{
-	font-size: 25px;
-	margin-bottom: 10px;
-}
-
-.good{
-	display:flex;
-	flex-direction: column;
-	border:1px solid #e9ecef;
-	width:300px;
-	font-size: 12px;
+	table {
+		margin-top: 10px;
+		border-top: 1px solid #e9ecef;
+		border-collapse: collapse;
+		width:100%;
+		font-size: 12px;
+  	}
   
+  	table, th, td {
+		vertical-align: middle;
+		border-bottom:1px solid #e9ecef;
+		border: colapse;
+		height:30px;
+		text-align:left;
+		padding-left: 20px;
+  	}
+	  tr:nth-child(even) {background-color: #f2f2f2;}
+	  
+	  @media(max-width:500px){
+		display: flex;
+		flex-direction: column;  
+		align-content: center;
+		text-align: center;
+		table{
+			align-content: center;
+			  width:100%;
+		  }
+	  }
 }
-
-.disc-golf {
-	border-bottom:1px solid  #e9ecef;
-	padding: 10px;
-}
-
-.coding{
-	border-bottom:1px solid  #e9ecef;
-	padding: 10px;
-}
-
-.games{
-	border-bottom:1px solid  #e9ecef;
-	padding: 10px;
-}
-
-.bootstrap{
-	border-bottom:1px solid  #e9ecef;
-	padding: 10px;
-}
-
-.naps{
-	padding: 10px;
-}
-.history h1{
-	font-size: 20px;
-	padding-bottom: 10px;
-}
-
-table {
-	border-top: 1px solid #e9ecef;
-	border-collapse: collapse;
-	width:600px;
-	font-size: 12px;
-  }
-  
-  table, th, td {
-	vertical-align: middle;
-	border-bottom:1px solid #e9ecef;
-	border: colapse;
-	height:30px;
-	text-align:left;
-	padding-left: 20px;
-  }
-  tr:nth-child(even) {background-color: #f2f2f2;}
-
 footer{
 	background: darkgrey;
 	text-align: center;

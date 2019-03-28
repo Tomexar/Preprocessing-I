@@ -134,6 +134,15 @@ html,
 body {
   height: 100%;
 }
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+b {
+  font-weight: bold;
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -142,6 +151,12 @@ header {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+    background: red;
+  }
 }
 header a {
   text-decoration: none;
@@ -152,29 +167,29 @@ header a {
   background: #e9ecef;
   border-radius: 2px;
 }
-img {
+.profile img {
   height: 200px;
   width: 200px;
   margin: 40px 0 10px 20px;
 }
-.top-profile h1 {
+.profile .top-profile h1 {
   font-size: 40px;
   margin-left: 20px;
 }
-.top-profile p {
+.profile .top-profile p {
   font-size: 17px;
   margin: 15px 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid grey;
 }
-.bot-profile {
+.profile .bot-profile {
   margin-left: 20px;
   padding-bottom: 50px;
 }
-.bot-profile p {
+.profile .bot-profile p {
   font-size: 13px;
 }
-button {
+.profile button {
   margin: 20px 0 0 0;
   border: 1px solid darkgrey;
   background: darkgray;
@@ -184,68 +199,86 @@ button {
   font-size: 15px;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .profile {
+    text-align: center;
+  }
+}
 .middle {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
 }
-.listen {
+.middle .listen {
   width: 50%;
 }
-.listen h1 {
+.middle .listen h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
-.listen p {
-  font-size: 15px;
+.middle .listen p {
+  font-size: 12px;
   padding-right: 20px;
+  line-height: 150%;
 }
-.stuff {
+.middle .stuff {
   width: 50%;
 }
-.stuff h1 {
+.middle .stuff h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
-.good {
+.middle .stuff .good {
   display: flex;
   flex-direction: column;
   border: 1px solid #e9ecef;
-  width: 300px;
+  width: 18.75rem;
   font-size: 12px;
 }
-.disc-golf {
+.middle .stuff .good .disc-golf {
   border-bottom: 1px solid #e9ecef;
   padding: 10px;
 }
-.coding {
+.middle .stuff .good .coding {
   border-bottom: 1px solid #e9ecef;
   padding: 10px;
 }
-.games {
+.middle .stuff .good .games {
   border-bottom: 1px solid #e9ecef;
   padding: 10px;
 }
-.bootstrap {
+.middle .stuff .good .bootstrap {
   border-bottom: 1px solid #e9ecef;
   padding: 10px;
 }
-.naps {
+.middle .stuff .good .naps {
   padding: 10px;
 }
-.history h1 {
+@media (max-width: 500px) {
+  .middle {
+    flex-direction: column;
+    align-content: center;
+  }
+  .middle .stuff {
+    margin-top: 15px;
+  }
+  .middle .stuff .good {
+    width: 11rem;
+  }
+}
+.history .history h1 {
   font-size: 20px;
-  padding-bottom: 10px;
 }
-table {
+.history table {
+  margin-top: 10px;
   border-top: 1px solid #e9ecef;
   border-collapse: collapse;
-  width: 600px;
+  width: 100%;
   font-size: 12px;
 }
-table,
-th,
-td {
+.history table,
+.history th,
+.history td {
   vertical-align: middle;
   border-bottom: 1px solid #e9ecef;
   border: colapse;
@@ -253,8 +286,20 @@ td {
   text-align: left;
   padding-left: 20px;
 }
-tr:nth-child(even) {
+.history tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+@media (max-width: 500px) {
+  .history {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+  .history table {
+    align-content: center;
+    width: 100%;
+  }
 }
 footer {
   background: darkgrey;
