@@ -154,17 +154,20 @@ header {
 }
 header a {
   font-size: 1rem;
+  padding: 0.9375rem;
+  text-decoration: none;
+  color: black;
 }
 @media (max-width: 500px) {
   header {
     justify-content: center;
+    align-content: center;
+    text-align: center;
   }
-}
-header a {
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: black;
-  padding: 0.9375rem;
+  header a {
+    font-size: 0.8rem;
+    padding: 0.9375rem;
+  }
 }
 .profile {
   background: #e9ecef;
@@ -183,7 +186,7 @@ header a {
   font-size: 1.063rem;
   margin: 0.9375rem 1.25rem;
   padding-bottom: 0.9375rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #e9ecef;
 }
 .profile .bot-profile {
   margin-left: 1.25rem;
@@ -205,6 +208,8 @@ header a {
 }
 @media (max-width: 500px) {
   .profile {
+    justify-content: center;
+    align-content: center;
     text-align: center;
   }
 }
@@ -261,12 +266,15 @@ header a {
 @media (max-width: 500px) {
   .middle {
     flex-direction: column;
+    justify-content: center;
     align-content: center;
+    text-align: center;
   }
   .middle .stuff {
     margin-top: 0.9375rem;
   }
   .middle .stuff .good {
+    text-align: left;
     width: 11rem;
   }
 }
@@ -291,12 +299,13 @@ header a {
   padding-left: 1.25rem;
 }
 .history tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #e9ecef;
 }
 @media (max-width: 500px) {
   .history {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     text-align: center;
   }
