@@ -60,21 +60,8 @@ html, body {
 
 // mixins 
 .ml20(){
-	margin-left: 20px;
+	margin-left: 1.25rem;
 }
-
-
-
-//media 
-
-
-
-
-// @media( max-width:500px)
-
-
-
-
 
 //variables 
 h1{
@@ -96,17 +83,20 @@ b{
 header{
 	display: flex;
 	justify-content: flex-end;
-	margin: 20px 0;
+	margin: 1.25rem 0;
+	a{
+		font-size: 1rem;
+	}
 	
 	@media(max-width: 500px){
 		justify-content: center;
-		background: red;
 	}
 
-	a{
+	a{	
+		font-size:0.8rem;
 		text-decoration: none;
 		color: black;
-		padding:15px;
+		padding:0.9375rem;
 	}
 }//header 
 
@@ -117,39 +107,40 @@ header{
 	border-radius: 2px;
 
 	img {
-		height: 200px;
-		width: 200px;
-		margin: 40px 0 10px 20px;
+		height: 12.5rem;
+		width: 12.5rem;
+		margin: 2.5rem 0 0.625rem 1.25rem;
 		}
 	.top-profile h1{
-		font-size: 40px;
-		margin-left: 20px;	
+		font-size: 2.5rem;
+		margin-left: 1.25rem;	
 		}
 
 	.top-profile p{
-		font-size: 17px;
-		margin: 15px 20px;
-		padding-bottom: 15px;
+		font-size: 1.063rem;
+		margin: 0.9375rem 1.25rem;
+		padding-bottom: 0.9375rem;
 		border-bottom: 1px solid grey;
 		}
 
 	.bot-profile{
-		margin-left: 20px;
-		padding-bottom: 50px;
+		margin-left: 1.25rem;
+		padding-bottom: 3.125rem;
 	}
 		
 	.bot-profile p{
-			font-size: 13px;
+			font-size: 0.8125rem;
+			margin-right: 0.625rem;
 	}
 		
 	button{
-		margin: 20px 0 0 0;
+		margin: 1.25rem 0 0 0;
 		border:1px solid darkgrey;
 		background: darkgray;
 		color: white;
-		padding :7px 10px;
+		padding :0.4375rem 0.625rem;
 		border-radius: 6px;
-		font-size: 15px;
+		font-size: 0.9375rem;
 		cursor: pointer;
 		}
 	@media (max-width: 500px) {
@@ -162,17 +153,17 @@ header{
 .middle{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px 0;
+	padding: 1.25rem 0;
 	
 	.listen{
 		width:50%;
 		h1{
-			font-size: 25px;
-			margin-bottom: 10px;
+			font-size: 1.563rem;
+			margin-bottom: 0.625rem;
 		}
 		 p{
-			font-size: 12px;
-			padding-right: 20px;
+			font-size: 0.75rem;
+			padding-right: 1.25rem;
 			line-height: 150%
 		}
 	}
@@ -180,8 +171,8 @@ header{
 		width:50%;
 
 		h1{
-		font-size: 25px;
-		margin-bottom: 10px;
+		font-size: 1.563rem;
+		margin-bottom: 0.625rem;
 		}
 	
 		.good{
@@ -189,36 +180,36 @@ header{
 			flex-direction: column;
 			border:1px solid #e9ecef;
 			width:18.75rem;
-			font-size: 12px;
+			font-size: 0.75rem;
 			.disc-golf {
 				border-bottom:1px solid  #e9ecef;
-				padding: 10px;
+				padding: 0.625rem;
 			}
 			
 			.coding{
 				border-bottom:1px solid  #e9ecef;
-				padding: 10px;
+				padding: 0.625rem;
 			}
 			
 			.games{
 				border-bottom:1px solid  #e9ecef;
-				padding: 10px;
+				padding: 0.625rem;
 			}
 			
 			.bootstrap{
 				border-bottom:1px solid  #e9ecef;
-				padding: 10px;
+				padding: 0.625rem;
 			}
 			
 			.naps{
-				padding: 10px;
+				padding: 0.625rem;
 			}
 		}
 	}	
 	@media(max-width: 500px){
 		flex-direction: column;
 		align-content: center;
-		.stuff{ margin-top: 15px;
+		.stuff{ margin-top: 0.9375rem;
 			.good{
 				width:11rem;
 			}
@@ -232,24 +223,24 @@ header{
 
 
 	.history h1{
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	table {
-		margin-top: 10px;
+		margin-top: 0.625rem;
 		border-top: 1px solid #e9ecef;
 		border-collapse: collapse;
 		width:100%;
-		font-size: 12px;
+		font-size: 0.75rem;
   	}
   
   	table, th, td {
 		vertical-align: middle;
 		border-bottom:1px solid #e9ecef;
 		border: colapse;
-		height:30px;
+		height:1.875rem;
 		text-align:left;
-		padding-left: 20px;
+		padding-left: 1.25rem;
   	}
 	  tr:nth-child(even) {background-color: #f2f2f2;}
 	  
@@ -267,8 +258,8 @@ header{
 footer{
 	background: darkgrey;
 	text-align: center;
-	padding: 25px 0px;
-	margin: 20px 0;
-	font-size: 12px;
+	padding: 1.563rem 0px;
+	margin: 1.25rem 0;
+	font-size: 0.75rem;
 	color: white;
 }

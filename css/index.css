@@ -150,53 +150,57 @@ b {
 header {
   display: flex;
   justify-content: flex-end;
-  margin: 20px 0;
+  margin: 1.25rem 0;
+}
+header a {
+  font-size: 1rem;
 }
 @media (max-width: 500px) {
   header {
     justify-content: center;
-    background: red;
   }
 }
 header a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: black;
-  padding: 15px;
+  padding: 0.9375rem;
 }
 .profile {
   background: #e9ecef;
   border-radius: 2px;
 }
 .profile img {
-  height: 200px;
-  width: 200px;
-  margin: 40px 0 10px 20px;
+  height: 12.5rem;
+  width: 12.5rem;
+  margin: 2.5rem 0 0.625rem 1.25rem;
 }
 .profile .top-profile h1 {
-  font-size: 40px;
-  margin-left: 20px;
+  font-size: 2.5rem;
+  margin-left: 1.25rem;
 }
 .profile .top-profile p {
-  font-size: 17px;
-  margin: 15px 20px;
-  padding-bottom: 15px;
+  font-size: 1.063rem;
+  margin: 0.9375rem 1.25rem;
+  padding-bottom: 0.9375rem;
   border-bottom: 1px solid grey;
 }
 .profile .bot-profile {
-  margin-left: 20px;
-  padding-bottom: 50px;
+  margin-left: 1.25rem;
+  padding-bottom: 3.125rem;
 }
 .profile .bot-profile p {
-  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-right: 0.625rem;
 }
 .profile button {
-  margin: 20px 0 0 0;
+  margin: 1.25rem 0 0 0;
   border: 1px solid darkgrey;
   background: darkgray;
   color: white;
-  padding: 7px 10px;
+  padding: 0.4375rem 0.625rem;
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 0.9375rem;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -207,52 +211,52 @@ header a {
 .middle {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 .middle .listen {
   width: 50%;
 }
 .middle .listen h1 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 1.563rem;
+  margin-bottom: 0.625rem;
 }
 .middle .listen p {
-  font-size: 12px;
-  padding-right: 20px;
+  font-size: 0.75rem;
+  padding-right: 1.25rem;
   line-height: 150%;
 }
 .middle .stuff {
   width: 50%;
 }
 .middle .stuff h1 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 1.563rem;
+  margin-bottom: 0.625rem;
 }
 .middle .stuff .good {
   display: flex;
   flex-direction: column;
   border: 1px solid #e9ecef;
   width: 18.75rem;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .middle .stuff .good .disc-golf {
   border-bottom: 1px solid #e9ecef;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .middle .stuff .good .coding {
   border-bottom: 1px solid #e9ecef;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .middle .stuff .good .games {
   border-bottom: 1px solid #e9ecef;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .middle .stuff .good .bootstrap {
   border-bottom: 1px solid #e9ecef;
-  padding: 10px;
+  padding: 0.625rem;
 }
 .middle .stuff .good .naps {
-  padding: 10px;
+  padding: 0.625rem;
 }
 @media (max-width: 500px) {
   .middle {
@@ -260,21 +264,21 @@ header a {
     align-content: center;
   }
   .middle .stuff {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
   }
   .middle .stuff .good {
     width: 11rem;
   }
 }
 .history .history h1 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .history table {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   border-top: 1px solid #e9ecef;
   border-collapse: collapse;
   width: 100%;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .history table,
 .history th,
@@ -282,9 +286,9 @@ header a {
   vertical-align: middle;
   border-bottom: 1px solid #e9ecef;
   border: colapse;
-  height: 30px;
+  height: 1.875rem;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 .history tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -304,8 +308,8 @@ header a {
 footer {
   background: darkgrey;
   text-align: center;
-  padding: 25px 0px;
-  margin: 20px 0;
-  font-size: 12px;
+  padding: 1.563rem 0px;
+  margin: 1.25rem 0;
+  font-size: 0.75rem;
   color: white;
 }
